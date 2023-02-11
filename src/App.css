@@ -1,38 +1,41 @@
 .App {
   text-align: center;
+  margin: 100px 200px;
+  border: solid 1px;
+  padding: 2%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Task {
+  background-color: lightgrey;
+  margin: 10px 3px;
+  padding: 2%;
+  text-align: left;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Task .Text{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  font-weight: 900;
 }
 
-.App-link {
-  color: #61dafb;
+.Task.remindMe {
+  border-left-style: solid;
+  border-width: 5px;
+  border-color:green;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Header {
+  display: flex;
+  
+  justify-content: space-between;
+  padding: 5%;
+}
+
+.Header button{
+  transition: 0.5s;
+}
+
+.form-control {
+  display: flex;
+  justify-content: space-between;
 }
